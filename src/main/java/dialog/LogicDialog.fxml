@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogicController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="10.0" prefWidth="80.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="531.0" minWidth="10.0" prefWidth="237.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="666.0" minWidth="10.0" prefWidth="342.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="666.0" minWidth="10.0" prefWidth="336.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="snLabel" prefHeight="18.0" prefWidth="247.0" GridPane.columnIndex="1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="sceneLabel" prefHeight="15.0" prefWidth="291.0" text="名称" GridPane.columnIndex="2" />
+      <HBox GridPane.rowIndex="1">
+         <children>
+            <Label prefHeight="18.0" prefWidth="37.0" text="生效事件">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <ComboBox fx:id="eventComboBox" prefHeight="23.0" prefWidth="291.0" />
+         </children>
+      </HBox>
+      <HBox GridPane.rowIndex="3">
+         <children>
+            <Label prefHeight="18.0" prefWidth="37.0" text="条件1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <ComboBox fx:id="cond1ComboBox" prefHeight="23.0" prefWidth="291.0" />
+         </children>
+      </HBox>
+      <TextArea fx:id="cond1TextArea" prefHeight="92.0" prefWidth="291.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </GridPane.margin></TextArea>
+      <Label fx:id="cond1Label" alignment="TOP_LEFT" prefHeight="68.0" prefWidth="354.0" text="参数格式：" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Label>
+      <HBox GridPane.rowIndex="4">
+         <children>
+            <Label prefHeight="18.0" prefWidth="37.0" text="条件2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <ComboBox fx:id="cond2ComboBox" prefHeight="23.0" prefWidth="291.0" />
+         </children>
+      </HBox>
+      <TextArea fx:id="cond2TextArea" prefHeight="92.0" prefWidth="291.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </GridPane.margin></TextArea>
+      <Label fx:id="cond2Label" alignment="TOP_LEFT" prefHeight="67.0" prefWidth="354.0" text="参数格式：" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Label>
+      <HBox GridPane.rowIndex="5">
+         <children>
+            <Label prefHeight="18.0" prefWidth="37.0" text="动作1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <children>
+            <ComboBox fx:id="action1ComboBox" prefHeight="23.0" prefWidth="291.0" />
+         </children>
+      </HBox>
+      <TextArea fx:id="action1TextArea" prefHeight="92.0" prefWidth="291.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </GridPane.margin></TextArea>
+      <Label fx:id="action1Label" alignment="TOP_LEFT" prefHeight="69.0" prefWidth="354.0" text="参数格式：" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Label>
+      <HBox GridPane.rowIndex="6">
+         <children>
+            <Label prefHeight="18.0" prefWidth="37.0" text="动作2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <children>
+            <ComboBox fx:id="action2ComboBox" prefHeight="23.0" prefWidth="291.0" />
+         </children>
+      </HBox>
+      <TextArea fx:id="action2TextArea" prefHeight="92.0" prefWidth="291.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </GridPane.margin></TextArea>
+      <Label fx:id="action2Label" alignment="TOP_LEFT" prefHeight="69.0" prefWidth="354.0" text="参数格式：" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="6">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Label>
+      <HBox GridPane.rowIndex="7">
+         <children>
+            <Label prefHeight="18.0" prefWidth="37.0" text="动作3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <children>
+            <ComboBox fx:id="action3ComboBox" prefHeight="23.0" prefWidth="291.0" />
+         </children>
+      </HBox>
+      <TextArea fx:id="action3TextArea" prefHeight="92.0" prefWidth="291.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </GridPane.margin></TextArea>
+      <Label fx:id="action3Label" alignment="TOP_LEFT" prefHeight="67.0" prefWidth="354.0" text="参数格式：" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Label>
+      <Pane GridPane.columnIndex="3" GridPane.rowIndex="9">
+         <children>
+            <Button fx:id="cancelButton" layoutX="219.0" layoutY="22.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="98.0" text="取消" />
+            <Button fx:id="saveButton" layoutX="92.0" layoutY="22.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="98.0" text="保存" />
+         </children>
+      </Pane>
+      <HBox GridPane.rowIndex="2">
+         <children>
+            <Label prefHeight="18.0" prefWidth="37.0" text="关系">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <ChoiceBox fx:id="relationChoiceBox" prefHeight="23.0" prefWidth="291.0" />
+         </children>
+      </HBox>
+      <Label layoutX="20.0" layoutY="586.0" prefHeight="18.0" prefWidth="86.0" text="执行次数" GridPane.rowIndex="8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtExtTimes" prefHeight="23.0" prefWidth="293.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <Pane GridPane.columnIndex="2" GridPane.rowIndex="9">
+         <children>
+            <Button fx:id="deleteButton" layoutX="94.0" layoutY="19.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="98.0" text="删除" />
+         </children>
+      </Pane>
+      <Label layoutX="79.0" layoutY="33.0" prefHeight="15.0" prefWidth="121.0" text="Sn：">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label prefHeight="15.0" prefWidth="158.0" text="默认执行1次，0代表无限次" GridPane.columnIndex="2" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>

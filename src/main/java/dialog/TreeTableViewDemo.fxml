@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.Pane?>
+<Pane depthTest="ENABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TreeTableViewDemoController">
+   <children>
+      <TreeTableView fx:id="instTreeTableView" layoutY="24.0" prefHeight="747.0" prefWidth="245.0" />
+      <MenuBar nodeOrientation="LEFT_TO_RIGHT">
+        <menus>
+          <Menu mnemonicParsing="false" text="功能">
+            <items>
+              <MenuItem fx:id="menuSetConfDir" mnemonicParsing="false" text="设置配置文件目录" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</Pane>
