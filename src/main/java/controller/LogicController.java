@@ -1,9 +1,6 @@
 package controller;
 
-import config.ConfAction;
-import config.ConfCondition;
-import config.ConfEvent;
-import config.ConfLogic;
+import config.*;
 import dialog.LogicDialog;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -624,6 +621,9 @@ public class LogicController implements Initializable {
 
 		showConfLogic.setDisAction1Param(disAction1TextArea.getText());
 		showConfLogic.setDisAction2Param(disAction2TextArea.getText());
+		if (ConfLogic.isModifyFlag()) {
+			ConfManager.saveCsv();
+		}
 		return true;
 	}
 

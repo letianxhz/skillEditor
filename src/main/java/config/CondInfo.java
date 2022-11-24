@@ -17,7 +17,10 @@ public class CondInfo {
     }
 
     public void setCondParam(String condParam) {
-        this.condParam = condParam;
+        if (null == condParam) {
+            return;
+        }
+        this.condParam = condParam.replaceAll("\\s*|\r|\n|\t","");
     }
 
     public CondInfo() {

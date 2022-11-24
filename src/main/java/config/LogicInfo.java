@@ -45,6 +45,10 @@ public class LogicInfo {
     }
 
     public void tailorTriggerInfo() {
+        //如果策划不填cd时间默认就设置5s
+        if (cdTime < 1.0) {
+            cdTime = 5.0;
+        }
         activeTrigger.tailor();
         disableTrigger.tailor();
     }

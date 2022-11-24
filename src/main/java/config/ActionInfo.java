@@ -17,7 +17,10 @@ public class ActionInfo {
     }
 
     public void setActionParam(String actionParam) {
-        this.actionParam = actionParam;
+        if (null == actionParam) {
+            return;
+        }
+        this.actionParam = actionParam.replaceAll("\\s*|\r|\n|\t","");
     }
 
     public ActionInfo() {
